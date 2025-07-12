@@ -115,11 +115,11 @@ const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">NIT</span>
+                <span className="text-white font-bold text-xl">AVM</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-foreground">NIT Silchar</h1>
-                <p className="text-sm text-muted-foreground">Excellence in Technical Education</p>
+                <h1 className="text-xl font-bold text-foreground">Aastha Vidya Mandir</h1>
+                <p className="text-sm text-muted-foreground">English Medium School</p>
               </div>
             </Link>
 

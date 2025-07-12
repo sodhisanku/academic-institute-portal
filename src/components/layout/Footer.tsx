@@ -39,16 +39,16 @@ const Footer = () => {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">NIT</span>
+                  <span className="text-white font-bold text-xl">AVM</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">NIT Silchar</h3>
-                  <p className="text-sm text-gray-300">Excellence in Technical Education</p>
+                  <h3 className="text-xl font-bold">Aastha Vidya Mandir</h3>
+                  <p className="text-sm text-gray-300">English Medium School</p>
                 </div>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">
-                National Institute of Technology Silchar is one of the premier technical institutions 
-                in India, committed to excellence in engineering education and research.
+                Aastha Vidya Mandir English Medium School is committed to providing quality education 
+                with CBSE curriculum from LKG to Class XII, nurturing young minds for a bright future.
               </p>
             </div>
 
@@ -57,8 +57,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                 <div className="text-sm text-gray-300">
-                  <p>National Institute of Technology Silchar</p>
-                  <p>Silchar, Assam - 788010, India</p>
+                  <p>Aastha Vidya Mandir English Medium School</p>
+                  <p>Jawanga, Assam - 788010, India</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -67,7 +67,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent flex-shrink-0" />
-                <span className="text-sm text-gray-300">info@nits.ac.in</span>
+                <span className="text-sm text-gray-300">info@aasthavidyamandir.edu.in</span>
               </div>
             </div>
 
@@ -166,7 +166,7 @@ const Footer = () => {
         <div className="container-academic py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-gray-300">
-              <p>&copy; 2024 National Institute of Technology Silchar. All rights reserved.</p>
+              <p>&copy; 2024 Aastha Vidya Mandir English Medium School. All rights reserved.</p>
             </div>
             <div className="flex space-x-6 text-sm">
               <Link to="/privacy" className="text-gray-300 hover:text-accent transition-colors">
