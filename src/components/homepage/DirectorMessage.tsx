@@ -12,7 +12,7 @@ const DirectorMessage = () => {
               <div className="w-full max-w-md mx-auto lg:max-w-none">
                 <img
                   src="/api/placeholder/400/500"
-                  alt="Director NIT Silchar"
+                  alt="Principal Aastha Vidya Mandir"
                   className="w-full h-auto rounded-2xl shadow-strong"
                 />
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-primary rounded-2xl flex items-center justify-center">
@@ -25,41 +25,40 @@ const DirectorMessage = () => {
           {/* Message Content */}
           <div className="order-1 lg:order-2 space-y-6">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">Director's Message</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4">Principal's Message</h2>
               <div className="w-20 h-1 bg-gradient-primary rounded-full"></div>
             </div>
 
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p className="text-lg">
-                "Welcome to the National Institute of Technology Silchar, a premier institution 
-                that has been at the forefront of technical education and innovation for decades."
+                "Welcome to Aastha Vidya Mandir English Medium School, where we believe every child 
+                deserves quality education regardless of their background."
               </p>
               
               <p>
-                "Our commitment to excellence in education, research, and holistic development 
-                continues to attract the brightest minds from across the nation. We believe in 
-                nurturing not just engineers, but leaders who will shape the future of technology 
-                and society."
+                "Our school is specially designed to serve tribal and orphan children, providing them 
+                with completely free education, boarding, and all necessary facilities. We follow the 
+                CBSE curriculum from LKG to Class XII, ensuring our students receive the same quality 
+                education as any premier school."
               </p>
               
               <p>
-                "At NIT Silchar, we foster an environment of academic rigor, creative thinking, 
-                and practical application. Our state-of-the-art facilities, distinguished faculty, 
-                and industry partnerships ensure that our students are well-prepared to meet the 
-                challenges of the rapidly evolving technological landscape."
+                "Our dedicated faculty, modern facilities including smart classrooms and science labs, 
+                and nurturing environment help every child reach their full potential. We don't just 
+                educate; we transform lives and create opportunities for a brighter future."
               </p>
               
               <p>
-                "I invite you to explore the myriad opportunities that NIT Silchar offers and 
-                join us in our mission to create tomorrow's innovators and leaders."
+                "Join us in our mission to empower underprivileged children through the power of 
+                education and help us build a more inclusive and equitable society."
               </p>
             </div>
 
             <div className="pt-4">
               <div className="space-y-2">
-                <h4 className="text-xl font-semibold text-foreground">Prof. Dr. Rajesh Kumar</h4>
-                <p className="text-primary font-medium">Director, NIT Silchar</p>
-                <p className="text-sm text-muted-foreground">Ph.D. (IIT Delhi), M.Tech (IIT Kanpur)</p>
+                <h4 className="text-xl font-semibold text-foreground">Mr. Gopal Pandey</h4>
+                <p className="text-primary font-medium">Principal, Aastha Vidya Mandir</p>
+                <p className="text-sm text-muted-foreground">M.Ed., B.Ed. - 20 Years Experience</p>
               </div>
             </div>
 

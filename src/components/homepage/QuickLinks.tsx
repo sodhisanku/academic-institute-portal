@@ -19,28 +19,28 @@ const QuickLinks = () => {
     {
       title: "Academic Services",
       links: [
-        { icon: GraduationCap, label: "Admissions", path: "/admissions", external: false },
-        { icon: BookOpen, label: "Academic Calendar", path: "/academics/calendar", external: false },
-        { icon: FileText, label: "Examination", path: "/examination", external: false },
-        { icon: Award, label: "Results", path: "/results", external: true }
+        { icon: GraduationCap, label: "Free Admissions", path: "/admissions", external: false },
+        { icon: BookOpen, label: "CBSE Curriculum", path: "/academics", external: false },
+        { icon: FileText, label: "School Calendar", path: "/academics/calendar", external: false },
+        { icon: Award, label: "Student Results", path: "/results", external: false }
       ]
     },
     {
       title: "Student Services", 
       links: [
-        { icon: Building, label: "Library", path: "/facilities", external: false },
-        { icon: Users, label: "Student Portal", path: "#", external: true },
-        { icon: Briefcase, label: "Placement Cell", path: "/placement", external: false },
+        { icon: Building, label: "Hostel Facility", path: "/students/hostel", external: false },
+        { icon: Users, label: "Student Life", path: "/students/life", external: false },
+        { icon: Briefcase, label: "Career Guidance", path: "/career-guidance", external: false },
         { icon: Phone, label: "Grievance Portal", path: "/students/grievance", external: false }
       ]
     },
     {
-      title: "Quick Access",
+      title: "School Information",
       links: [
-        { icon: FileText, label: "Tenders", path: "/tenders", external: false },
+        { icon: FileText, label: "Notices", path: "/notices", external: false },
         { icon: Calendar, label: "Events", path: "/events", external: false },
-        { icon: MapPin, label: "Campus Map", path: "#", external: true },
-        { icon: ExternalLink, label: "NIRF Data", path: "#", external: true }
+        { icon: MapPin, label: "School Location", path: "/contact", external: false },
+        { icon: ExternalLink, label: "CBSE Portal", path: "#", external: true }
       ]
     }
   ];
@@ -91,10 +91,10 @@ const QuickLinks = () => {
         {/* Statistics Section */}
         <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { number: "5000+", label: "Students", icon: Users },
-            { number: "300+", label: "Faculty Members", icon: GraduationCap },
-            { number: "50+", label: "Years of Excellence", icon: Award },
-            { number: "15+", label: "Departments", icon: Building }
+            { number: "500+", label: "Students", icon: Users },
+            { number: "25+", label: "Faculty Members", icon: GraduationCap },
+            { number: "100%", label: "Free Education", icon: Award },
+            { number: "3320264", label: "CBSE Affiliation", icon: Building }
           ].map((stat, index) => (
             <div key={index} className="text-center p-6 bg-white rounded-lg shadow-soft hover-lift">
               <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4">

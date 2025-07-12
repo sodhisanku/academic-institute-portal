@@ -58,12 +58,13 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                 <div className="text-sm text-gray-300">
                   <p>Aastha Vidya Mandir English Medium School</p>
-                  <p>Jawanga, Assam - 788010, India</p>
+                  <p>Jawanga, Geedam, Chhattisgarh - 494114, India</p>
+                  <p>CBSE Affiliation: 3320264</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent flex-shrink-0" />
-                <span className="text-sm text-gray-300">+91-3842-242973</span>
+                <span className="text-sm text-gray-300">+91-9876543210</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent flex-shrink-0" />

@@ -19,14 +19,14 @@ const Navbar = () => {
   const navigationItems = [
     { label: 'Home', path: '/', hasDropdown: false },
     {
-      label: 'Institute',
-      path: '/institute',
+      label: 'About School',
+      path: '/about',
       hasDropdown: true,
       dropdownItems: [
-        { label: 'About Institute', path: '/institute/about' },
-        { label: 'Vision & Mission', path: '/institute/vision' },
-        { label: 'Administration', path: '/institute/administration' },
-        { label: 'Campus', path: '/institute/campus' }
+        { label: 'About Us', path: '/about' },
+        { label: 'Vision & Mission', path: '/about/vision' },
+        { label: 'Principal Message', path: '/about/principal' },
+        { label: 'CBSE Affiliation', path: '/about/cbse' }
       ]
     },
     {
@@ -34,9 +34,10 @@ const Navbar = () => {
       path: '/academics',
       hasDropdown: true,
       dropdownItems: [
-        { label: 'Undergraduate', path: '/academics/undergraduate' },
-        { label: 'Postgraduate', path: '/academics/postgraduate' },
-        { label: 'Ph.D Programs', path: '/academics/phd' },
+        { label: 'Pre-Primary (LKG-UKG)', path: '/academics/pre-primary' },
+        { label: 'Primary (I-V)', path: '/academics/primary' },
+        { label: 'Secondary (VI-VIII)', path: '/academics/secondary' },
+        { label: 'Senior Secondary (IX-XII)', path: '/academics/senior' },
         { label: 'Academic Calendar', path: '/academics/calendar' }
       ]
     },
@@ -45,19 +46,20 @@ const Navbar = () => {
       path: '/departments',
       hasDropdown: true,
       dropdownItems: [
-        { label: 'Computer Science & Engineering', path: '/departments/cse' },
-        { label: 'Electronics & Communication', path: '/departments/ece' },
-        { label: 'Mechanical Engineering', path: '/departments/me' }
+        { label: 'Primary Section', path: '/departments/primary' },
+        { label: 'Secondary Section', path: '/departments/secondary' },
+        { label: 'Senior Secondary', path: '/departments/senior-secondary' }
       ]
     },
     {
-      label: 'Research',
-      path: '/research',
+      label: 'Admissions',
+      path: '/admissions',
       hasDropdown: true,
       dropdownItems: [
-        { label: 'Research Areas', path: '/research/areas' },
-        { label: 'Publications', path: '/research/publications' },
-        { label: 'Labs & Centers', path: '/research/labs' }
+        { label: 'Admission Process', path: '/admissions/process' },
+        { label: 'Free Education', path: '/admissions/free-education' },
+        { label: 'Eligibility Criteria', path: '/admissions/eligibility' },
+        { label: 'Required Documents', path: '/admissions/documents' }
       ]
     },
     {
@@ -65,13 +67,23 @@ const Navbar = () => {
       path: '/students',
       hasDropdown: true,
       dropdownItems: [
+        { label: 'Student Life', path: '/students/life' },
+        { label: 'Hostel Facility', path: '/students/hostel' },
         { label: 'Student Clubs', path: '/students/clubs' },
-        { label: 'Hostel', path: '/students/hostel' },
         { label: 'Grievance', path: '/students/grievance' }
       ]
     },
     { label: 'Facilities', path: '/facilities', hasDropdown: false },
-    { label: 'Tenders', path: '/tenders', hasDropdown: false },
+    {
+      label: 'Notices',
+      path: '/notices',
+      hasDropdown: true,
+      dropdownItems: [
+        { label: 'Latest Notices', path: '/notices' },
+        { label: 'Exam Notices', path: '/notices/exams' },
+        { label: 'Event Notices', path: '/notices/events' }
+      ]
+    },
     { label: 'Contact', path: '/contact', hasDropdown: false }
   ];
 
