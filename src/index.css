@@ -2,40 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Academic Institute Design System - Professional and Modern */
 
 @layer base {
   :root {
+    /* Core colors inspired by academic institutions */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Academic Blue */
+    --primary: 220 85% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 220 85% 50%;
+    --primary-dark: 220 85% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Warm Gray */
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 220 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted backgrounds */
+    --muted: 220 15% 97%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Gold/Orange for highlights */
+    --accent: 35 85% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 35 85% 60%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs */
+    --border: 220 15% 88%;
+    --input: 220 15% 95%;
+    --ring: 220 85% 35%;
 
+    /* Academic specific colors */
+    --academic-navy: 220 100% 20%;
+    --academic-gold: 45 90% 55%;
+    --academic-green: 140 50% 45%;
+    --academic-red: 0 80% 50%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark)), hsl(var(--primary)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px hsl(var(--primary) / 0.1);
+    --shadow-medium: 0 4px 16px hsl(var(--primary) / 0.15);
+    --shadow-strong: 0 8px 32px hsl(var(--primary) / 0.2);
+
+    /* Radius */
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
@@ -100,6 +125,96 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-foreground;
+  }
+
+  h1 { @apply text-4xl lg:text-5xl; }
+  h2 { @apply text-3xl lg:text-4xl; }
+  h3 { @apply text-2xl lg:text-3xl; }
+  h4 { @apply text-xl lg:text-2xl; }
+  h5 { @apply text-lg lg:text-xl; }
+  h6 { @apply text-base lg:text-lg; }
+}
+
+@layer components {
+  /* Academic button variants */
+  .btn-academic {
+    @apply bg-[hsl(var(--primary))] text-primary-foreground hover:bg-[hsl(var(--primary-dark))] px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)];
+  }
+
+  .btn-academic-outline {
+    @apply border-2 border-[hsl(var(--primary))] text-[hsl(var(--primary))] hover:bg-[hsl(var(--primary))] hover:text-primary-foreground px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  }
+
+  .btn-accent {
+    @apply bg-[hsl(var(--accent))] text-accent-foreground hover:bg-[hsl(var(--accent-light))] px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-[var(--shadow-soft)];
+  }
+
+  /* Card styles */
+  .card-academic {
+    @apply bg-card border border-border rounded-lg p-6 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-all duration-300;
+  }
+
+  .card-hero {
+    @apply bg-gradient-to-br from-[hsl(var(--primary-dark))] to-[hsl(var(--primary))] text-white p-8 rounded-xl shadow-[var(--shadow-strong)];
+  }
+
+  /* Navigation styles */
+  .nav-link {
+    @apply text-muted-foreground hover:text-[hsl(var(--primary))] transition-colors duration-200 font-medium;
+  }
+
+  .nav-link-active {
+    @apply text-[hsl(var(--primary))] font-semibold;
+  }
+
+  /* Layout utilities */
+  .section-padding {
+    @apply py-16 px-4 md:px-6 lg:px-8;
+  }
+
+  .container-academic {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Animation utilities */
+  .fade-in {
+    @apply animate-[fadeIn_0.6s_ease-out];
+  }
+
+  .slide-up {
+    @apply animate-[slideUp_0.8s_ease-out];
+  }
+}
+
+@layer utilities {
+  /* Custom animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
   }
 }
