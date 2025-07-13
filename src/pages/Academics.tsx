@@ -3,12 +3,13 @@ import { GraduationCap, BookOpen, Download, Users, Calendar, Trophy } from 'luci
 import mockData from '../data/mockData.json';
 
 const Academics = () => {
-  const [activeTab, setActiveTab] = useState('undergraduate');
+  const [activeTab, setActiveTab] = useState('prePrimary');
 
   const tabs = [
-    { id: 'undergraduate', label: 'Undergraduate (B.Tech)', icon: GraduationCap },
-    { id: 'postgraduate', label: 'Postgraduate (M.Tech)', icon: BookOpen },
-    { id: 'phd', label: 'Doctoral (Ph.D)', icon: Trophy }
+    { id: 'prePrimary', label: 'Pre-Primary (LKG-UKG)', icon: GraduationCap },
+    { id: 'primary', label: 'Primary (I-V)', icon: BookOpen },
+    { id: 'secondary', label: 'Secondary (VI-VIII)', icon: Trophy },
+    { id: 'seniorSecondary', label: 'Senior Secondary (IX-XII)', icon: Users }
   ];
 
   const academicHighlights = [
@@ -112,12 +113,12 @@ const Academics = () => {
                 
                 <div className="space-y-3 mb-4">
                   <div className="flex justify-between text-sm">
-                    <span className="text-muted-foreground">Duration:</span>
-                    <span className="font-medium">{program.duration}</span>
+                    <span className="text-muted-foreground">Age Group:</span>
+                    <span className="font-medium">{program.ageGroup}</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="text-muted-foreground">Seats:</span>
-                    <span className="font-medium">{program.seats}</span>
+                    <span className="text-muted-foreground">Duration:</span>
+                    <span className="font-medium">{program.duration}</span>
                   </div>
                 </div>
 
