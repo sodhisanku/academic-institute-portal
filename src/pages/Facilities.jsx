@@ -36,8 +36,8 @@ const Facilities = () => {
 
   const allFacilities = [...mockData.facilities, ...additionalFacilities];
 
-  const getIcon = (facilityName: string) => {
-    const iconMap: { [key: string]: any } = {
+  const getIcon = (facilityName) => {
+    const iconMap = {
       'Central Library': Book,
       'Computer Center': Cpu,
       'Sports Complex': Trophy,

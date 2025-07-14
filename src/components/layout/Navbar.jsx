@@ -18,72 +18,10 @@ const Navbar = () => {
 
   const navigationItems = [
     { label: 'Home', path: '/', hasDropdown: false },
-    {
-      label: 'About School',
-      path: '/about',
-      hasDropdown: true,
-      dropdownItems: [
-        { label: 'About Us', path: '/about' },
-        { label: 'Vision & Mission', path: '/about/vision' },
-        { label: 'Principal Message', path: '/about/principal' },
-        { label: 'CBSE Affiliation', path: '/about/cbse' }
-      ]
-    },
-    {
-      label: 'Academics',
-      path: '/academics',
-      hasDropdown: true,
-      dropdownItems: [
-        { label: 'Pre-Primary (LKG-UKG)', path: '/academics/pre-primary' },
-        { label: 'Primary (I-V)', path: '/academics/primary' },
-        { label: 'Secondary (VI-VIII)', path: '/academics/secondary' },
-        { label: 'Senior Secondary (IX-XII)', path: '/academics/senior' },
-        { label: 'Academic Calendar', path: '/academics/calendar' }
-      ]
-    },
-    {
-      label: 'Departments',
-      path: '/departments',
-      hasDropdown: true,
-      dropdownItems: [
-        { label: 'Primary Section', path: '/departments/primary' },
-        { label: 'Secondary Section', path: '/departments/secondary' },
-        { label: 'Senior Secondary', path: '/departments/senior-secondary' }
-      ]
-    },
-    {
-      label: 'Admissions',
-      path: '/admissions',
-      hasDropdown: true,
-      dropdownItems: [
-        { label: 'Admission Process', path: '/admissions/process' },
-        { label: 'Free Education', path: '/admissions/free-education' },
-        { label: 'Eligibility Criteria', path: '/admissions/eligibility' },
-        { label: 'Required Documents', path: '/admissions/documents' }
-      ]
-    },
-    {
-      label: 'Students',
-      path: '/students',
-      hasDropdown: true,
-      dropdownItems: [
-        { label: 'Student Life', path: '/students/life' },
-        { label: 'Hostel Facility', path: '/students/hostel' },
-        { label: 'Student Clubs', path: '/students/clubs' },
-        { label: 'Grievance', path: '/students/grievance' }
-      ]
-    },
-    { label: 'Facilities', path: '/facilities', hasDropdown: false },
-    {
-      label: 'Notices',
-      path: '/notices',
-      hasDropdown: true,
-      dropdownItems: [
-        { label: 'Latest Notices', path: '/notices' },
-        { label: 'Exam Notices', path: '/notices/exams' },
-        { label: 'Event Notices', path: '/notices/events' }
-      ]
-    },
+    { label: 'Student Life', path: '/student-life', hasDropdown: false },
+    { label: 'Hostel', path: '/hostel', hasDropdown: false },
+    { label: 'Admissions', path: '/admissions', hasDropdown: false },
+    { label: 'Gallery', path: '/gallery', hasDropdown: false },
     { label: 'Contact', path: '/contact', hasDropdown: false }
   ];
 
@@ -100,15 +38,15 @@ const Navbar = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+91-3842-242973</span>
+                <span>+91-XXXXXXXXXX</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@nits.ac.in</span>
+                <span>info@asthavidyamandir.edu.in</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>Silchar, Assam - 788010</span>
+                <span>Jawanga, Geedam, Dantewada, Chhattisgarh</span>
               </div>
             </div>
             <div className="flex space-x-4">

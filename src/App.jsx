@@ -6,13 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Index from "./pages/Index";
-import About from "./pages/About";
-import Academics from "./pages/Academics";
-import Departments from "./pages/Departments";
-import Facilities from "./pages/Facilities";
-import Tenders from "./pages/Tenders";
-import Contact from "./pages/Contact";
+import StudentLife from "./pages/StudentLife";
+import Hostel from "./pages/Hostel";
 import Admissions from "./pages/Admissions";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,15 +26,10 @@ const App = () => (
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/about/*" element={<About />} />
-              <Route path="/academics" element={<Academics />} />
-              <Route path="/academics/*" element={<Academics />} />
-              <Route path="/departments" element={<Departments />} />
-              <Route path="/departments/*" element={<Departments />} />
+              <Route path="/student-life" element={<StudentLife />} />
+              <Route path="/hostel" element={<Hostel />} />
               <Route path="/admissions" element={<Admissions />} />
-              <Route path="/admissions/*" element={<Admissions />} />
-              <Route path="/facilities" element={<Facilities />} />
+              <Route path="/gallery" element={<Gallery />} />
               <Route path="/notices" element={<Tenders />} />
               <Route path="/tenders" element={<Tenders />} />
               <Route path="/contact" element={<Contact />} />
