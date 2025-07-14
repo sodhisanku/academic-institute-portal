@@ -5,7 +5,7 @@ import { ChevronDown, Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [activeDropdown, setActiveDropdown] = useState(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -87,7 +87,7 @@ const Navbar = () => {
     { label: 'Contact', path: '/contact', hasDropdown: false }
   ];
 
-  const handleDropdownToggle = (label: string) => {
+  const handleDropdownToggle = (label) => {
     setActiveDropdown(activeDropdown === label ? null : label);
   };
 
