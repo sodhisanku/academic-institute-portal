@@ -102,7 +102,7 @@ const Academics = () => {
 
           {/* Tab Content */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {mockData.programs[activeTab as keyof typeof mockData.programs]?.map((program, index) => (
+            {mockData.programs[activeTab]?.map((program, index) => (
               <div key={index} className="card-academic hover-lift">
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-lg font-semibold text-foreground leading-tight">{program.name}</h3>
